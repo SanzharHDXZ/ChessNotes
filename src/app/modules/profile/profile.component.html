@@ -1,0 +1,54 @@
+<div class="profile-container">
+    <h1>Profile</h1>
+  
+    <section class="game-history">
+      <h2>Game History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Opponent</th>
+            <th>Result</th>
+            <th>Duration</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let game of games">
+            <td>{{ game.opponent }}</td>
+            <td>{{ game.result }}</td>
+            <td>{{ game.duration }}</td>
+            <td>{{ game.date }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button (click)="downloadGameHistory()">Download Game History</button>
+    </section>
+  
+    <section class="account-settings">
+      <h2>Account Settings</h2>
+      <form (ngSubmit)="updateProfile(user)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" [(ngModel)]="user.username" name="username" />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="user.email" name="email" />
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="user.password" name="password" />
+  
+        <button type="submit">Update Profile</button>
+      </form>
+    </section>
+  
+    <section class="achievements">
+      <h2>Achievements</h2>
+      <div class="achievement-grid">
+        <div class="achievement-card" *ngFor="let achievement of achievements">
+          <img [src]="achievement.imageUrl" [alt]="achievement.name" />
+          <h3>{{ achievement.name }}</h3>
+          <p>{{ achievement.description }}</p>
+        </div>
+      </div>
+      <button (click)="downloadAchievements()">Download Achievements</button>
+    </section>
+  </div>

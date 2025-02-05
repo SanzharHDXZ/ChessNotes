@@ -1,0 +1,11 @@
+<mat-dialog-content>
+
+    <div class="choose-side">
+        <img src="assets/pieces/white king.svg" class="king-img" draggable="false" (click)="play('w')">
+        <img src="assets/pieces/black king.svg" class="king-img" draggable="false" (click)="play('b')">
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close (click)="closeDialog()">Cancel</button>
+</mat-dialog-actions>

@@ -1,0 +1,165 @@
+.chess-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .top-nav {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  
+    .nav-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      .logo-square {
+        width: 24px;
+        height: 24px;
+        background-color: #3b82f6;
+      }
+  
+      span {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.2s;
+  
+        &:hover {
+          color: #3b82f6;
+        }
+      }
+    }
+  
+    .auth-buttons {
+      display: flex;
+      gap: 1rem;
+  
+      button {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+  
+      .login-btn {
+        background: transparent;
+        border: 1px solid #3b82f6;
+        color: #3b82f6;
+  
+        &:hover {
+          background: rgba(59, 130, 246, 0.1);
+        }
+      }
+  
+      .signup-btn {
+        background: #3b82f6;
+        border: none;
+        color: white;
+  
+        &:hover {
+          background: #2563eb;
+        }
+      }
+    }
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .play-options {
+    text-align: center;
+    margin-top: 2rem;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+  
+      button {
+        padding: 0.75rem 1.5rem;
+        background: #3b82f6;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        transition: background 0.2s;
+  
+        &:hover {
+          background: #2563eb;
+        }
+      }
+    }
+  }
+  
+  .welcome-screen {
+    text-align: center;
+    margin-top: 4rem;
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      color: #9ca3af;
+      margin-bottom: 2rem;
+    }
+  
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #3b82f6;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+  
+      &:hover {
+        background: #2563eb;
+      }
+    }
+  }
+  
+  .chess-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }

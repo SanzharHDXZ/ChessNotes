@@ -1,0 +1,48 @@
+<div class="chess-container">
+    <nav class="top-nav">
+      <div class="nav-content">
+        <div class="left-section">
+          <div class="logo">
+            <div class="logo-square"></div>
+            <span>ChessNote</span>
+          </div>
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" (click)="togglePlayOptions()">Play</a>
+            <a href="#">Analysis</a>
+            <a href="#">Leaderboard</a>
+          </div>
+        </div>
+        <div class="auth-buttons">
+          <button class="login-btn">Log In</button>
+          <button class="signup-btn">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <ng-container *ngIf="showPlayOptions && !gameStarted">
+        <div class="play-options">
+          <h2>Choose Your Opponent</h2>
+          <div class="buttons">
+            <button (click)="startGame('friend')">Play against friend</button>
+            <button (click)="startGame('computer')">Play against computer</button>
+          </div>
+        </div>
+      </ng-container>
+  
+      <ng-container *ngIf="!showPlayOptions && !gameStarted">
+        <div class="welcome-screen">
+          <h1>Welcome to ChessNote</h1>
+          <p>Play chess against Chess.com players directly from our platform</p>
+          <button (click)="togglePlayOptions()">Start Playing</button>
+        </div>
+      </ng-container>
+  
+      <ng-container *ngIf="gameStarted">
+        <div class="chess-board">
+        </div>
+      </ng-container>
+    </main>
+  </div>

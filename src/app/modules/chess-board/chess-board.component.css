@@ -1,0 +1,161 @@
+.chess-board {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 560px; /* Увеличил размер */
+    height: 560px; /* Увеличил размер */
+    margin-top: 30px;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: white;
+}
+
+
+.game-over-message {
+    color: white;
+}
+
+.promotion-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+}
+
+.promotion-dialog img {
+    height: 70px;
+    cursor: pointer;
+}
+
+.close-promotion-dialog {
+    font-size: 45px;
+    cursor: pointer;
+    color: white;
+}
+
+.dark {
+    background-color: #779AAF
+}
+
+.light {
+    background-color: #D9E4E8;
+}
+
+.piece {
+    width:60px;
+}
+
+.selected-square {
+    box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+}
+
+.safe-square {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.king-in-check {
+    box-shadow: inset rgb(179, 21, 0) 0px 0px 40px 0px, inset rgb(163, 11, 0) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+}
+
+.last-move {
+    box-shadow: inset rgb(6, 179, 0) 0px 0px 40px 0px, inset rgb(6, 179, 0)0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+}
+
+.promotion-square {
+    box-shadow: inset rgb(0, 98, 150) 0px 0px 40px 0px, inset rgb(0, 98, 150) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+}
+
+.flip-board-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: black;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.flip-board-button:hover {
+    background-color: black;
+}
+
+.flip-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Optional: Add animation when flipping */
+.flip-icon {
+    transition: transform 0.3s ease;
+}
+
+.flip-board-button:active .flip-icon {
+    transform: rotate(180deg);
+}
+
+.player-info-container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    margin-top: 20px;
+}
+
+.player-card1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: #D9E4E8;
+    border-radius: 8px;
+    width: 260px;
+}
+
+.player-photo1 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #779AAF;
+}
+
+.player-details1 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    margin-top: -35px;
+    margin-right: -100px;
+}
+
+.player-nickname1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+

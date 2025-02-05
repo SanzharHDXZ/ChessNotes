@@ -1,0 +1,26 @@
+<div class="choose-side">
+    <div class="chess-color-selector white-selector" (click)="play('w')">
+        <div class="chess-board-background">
+            <div class="chess-board-pattern">
+                <img src="assets/pieces/white king.svg" class="king-piece" draggable="false">
+            </div>
+        </div>
+        <div class="color-overlay">
+            <span class="color-text">White</span>
+            <div class="strategy-spacer"></div>
+            <span class="strategy-text">First Move Power</span>
+        </div>
+    </div>
+    <div class="chess-color-selector black-selector" (click)="play('b')">
+        <div class="chess-board-background">
+            <div class="chess-board-pattern">
+                <img src="assets/pieces/black king.svg" class="king-piece" draggable="false">
+            </div>
+        </div>
+        <div class="color-overlay">
+            <span class="color-text">Black</span>
+            <div class="strategy-spacer"></div>
+            <span class="strategy-text">Strategic Defense</span>
+        </div>
+    </div>
+</div>

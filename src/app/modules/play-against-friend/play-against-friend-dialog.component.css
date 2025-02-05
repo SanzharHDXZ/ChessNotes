@@ -1,0 +1,14 @@
+
+.choose-side {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.king-img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: green;
+}

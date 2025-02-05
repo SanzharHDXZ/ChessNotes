@@ -1,0 +1,107 @@
+.nav-wrapper {
+  background: #1a1a1a;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.nav-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.site-name {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-items a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-items a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-items a.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.auth-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login-btn, .signup-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1.5px solid #007bff;
+  color: #007bff;
+}
+
+.login-btn:hover {
+  background: rgba(0, 123, 255, 0.1);
+  border-color: #0056b3;
+  color: #0056b3;
+}
+
+.signup-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+}
+
+.signup-btn:hover {
+  background: #0056b3;
+}
+
+.username {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+}

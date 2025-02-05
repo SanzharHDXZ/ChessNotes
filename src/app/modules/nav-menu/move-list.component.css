@@ -1,0 +1,52 @@
+.move-list {
+    position: fixed;
+    top: 50px;
+    right: 410px;
+    width: 300px;
+    height: 565px;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto; /* Enables scrolling only when content overflows */
+    background-color: rgba(128, 128, 128, 0.383);
+    padding: 10px;
+    border-radius: 5px, white;
+
+    z-index: 10;
+    margin-right: 180px;
+    overscroll-behavior: contain; /* Prevents scrolling from propagating to parent */
+    margin-top: 95px;
+  }
+
+  
+  .move-list::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for webkit browsers */
+  }
+  
+  .move-list {
+    -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+.row {
+    width: 250px;
+    display: flex;
+    color: white
+}
+
+.move-number {
+    width: 50px;
+}
+
+.current-move {
+    background-color: rgb(0, 143, 168);
+}
+
+.move {
+    cursor: pointer;
+    width: 100px;
+}
+
+.move:hover {
+    background-color: rgb(0, 143, 168);
+    opacity: 0.7
+}
+

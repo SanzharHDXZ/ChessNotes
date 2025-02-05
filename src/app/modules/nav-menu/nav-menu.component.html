@@ -1,0 +1,21 @@
+<nav class="nav-wrapper">
+  <div class="nav-content">
+    <div class="logo-section">
+      <img src="assets/images/chess-logo.webp" alt="ChessNote" class="logo">
+      <span class="site-name" routerLink="/home" style="cursor: pointer;">ChessNotes</span>
+    </div>
+    <div class="nav-items">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a (click)="openPlayOptions()" routerLinkActive="active" style="cursor: pointer;">Play</a>
+      <a (click)="toggleChat()" style="cursor: pointer;">Chat</a>
+    </div>
+    <div class="auth-section">
+      <button class="login-btn">Log In</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+<app-chat [isOpen]="isChatOpen"></app-chat>
+
+<router-outlet></router-outlet>
