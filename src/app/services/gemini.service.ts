@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GeminiService {
   private baseUrl = 'https://generativelanguage.googleapis.com/v1beta';
-  private apiKey = 'AIzaSyDFyF2Dz-SBAgWzWRwSmwdyH0E5HbO2Wsc'; // Replace with your actual API key
+  private apiKey = ' '; // Replace with your actual API key
 
   constructor(private http: HttpClient) {}
 
