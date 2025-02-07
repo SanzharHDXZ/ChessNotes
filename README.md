@@ -1,4 +1,10 @@
+<p align="center">   <img src="https://github.com/user-attachments/assets/f0e72934-53b6-4df7-8ef1-32d57fe50f21" width="100" height="100"> </p>
+
 # ChessNotes
+
+[![Star](https://img.shields.io/github/stars/SanzharHDXZ/ChessNotes.svg?logo=github&style=flat-square)](https://github.com/SanzharHDXZ/ChessNotes)&nbsp;
+[![Fork](https://img.shields.io/github/forks/SanzharHDXZ/ChessNotes.svg?logo=github&style=flat-square)](https://github.com/SanzharHDXZ/ChessNotes)&nbsp;
+[![Watch](https://img.shields.io/github/watchers/SanzharHDXZ/ChessNotes.svg?logo=github&style=flat-square)](https://github.com/SanzharHDXZ/ChessNotes)&nbsp;
 
 ChessNotes is a chess training application that enables users to create personalized virtual opponents replicating real players' styles from Chess.com. This tool is designed for tournament preparation, strategic training, and self-improvement by simulating specific opponents' playstyles.
 
