@@ -8,6 +8,8 @@
 
 ChessNotes is a chess training application that enables users to create personalized virtual opponents replicating real players' styles from Chess.com. This tool is designed for tournament preparation, strategic training, and self-improvement by simulating specific opponents' playstyles.
 
+[Kaggle Notebook: Setting Up Chess.com Bot Agent using Gemini AI](https://www.kaggle.com/code/sanzh08/chess-user-bot-chess-com-gemini-ai-839dff)
+
 ## Features
 1. **Personalized AI Opponents** – Train against AI mimicking real Chess.com players.
 2. **Data-Driven Training** – Analyze past games to improve your play.
