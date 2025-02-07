@@ -8,7 +8,11 @@ import { environment } from '../../environments/environment';
 })
 export class GeminiService {
   private baseUrl = 'https://generativelanguage.googleapis.com/v1beta';
+<<<<<<< HEAD
   private apiKey = environment.GEMINI_API_KEY; // Replace with your actual API key
+=======
+  private apiKey = ' '; // Replace with your actual API key
+>>>>>>> 4d54d0f6f803619a5ab4e0e0f8e2a225aa32b730
 
   constructor(private http: HttpClient) {}
 
