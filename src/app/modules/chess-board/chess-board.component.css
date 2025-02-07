@@ -143,6 +143,7 @@
     border-radius: 50%;
     object-fit: cover;
     background-color: #779AAF;
+    margin-right: -50px;
 }
 
 .player-details1 {
@@ -150,7 +151,7 @@
     flex-direction: column;
     flex-direction: row-reverse;
     margin-top: -35px;
-    margin-right: -100px;
+    margin-right: -150px;
 }
 
 .player-nickname1 {
@@ -159,3 +160,11 @@
     color: white;
 }
 
+.player-flag1 {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    background-color: #779AAF;
+    margin-right: -125px;
+    margin-top: -2px;
+}

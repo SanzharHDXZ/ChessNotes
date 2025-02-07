@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GeminiService {
   private baseUrl = 'https://generativelanguage.googleapis.com/v1beta';
-  private apiKey = 'AIzaSyDFyF2Dz-SBAgWzWRwSmwdyH0E5HbO2Wsc'; // Replace with your actual API key
+  private apiKey = environment.GEMINI_API_KEY; // Replace with your actual API key
 
   constructor(private http: HttpClient) {}
 

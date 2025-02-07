@@ -218,6 +218,7 @@ export class ChessBoardComponent implements OnInit, OnDestroy {
   player2Nickname: string = '';
   player1Photo: string = '';
   player2Photo: string = '';
+  player1Flag: string = ''
 
   // Add methods to update player info
   updatePlayer1Info(nickname: string, photo: string) {
