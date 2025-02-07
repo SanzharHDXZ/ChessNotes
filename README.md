@@ -40,6 +40,8 @@ Usage:
 3) Open the chat
 4) Enjoy the game!
 
+   Full guide of using you can see in https://www.youtube.com/watch?v=-IBRAcVGVZY
+
 Limitations:
 
 -Requires an active internet connection.
